@@ -3,6 +3,9 @@ python:
   - "3.5"
   - "3.6"
   - "nightly"
+install:
+  - pip install -r testing_requirements.txt
+
 # command to run tests
 script:
-    - if [[ $TRAVIS_PYTHON_VERSION == 3.4 || $TRAVIS_PYTHON_VERSION == 3.5 ]]; then py.test;else pytest; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.4 || $TRAVIS_PYTHON_VERSION == 3.5 ]]; then py.test;else pytest; fi
