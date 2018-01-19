@@ -13,6 +13,7 @@ from .websocket import WSClient
 
 _LOGGER = logging.getLogger(__name__)
 
+
 class DeconzSession:
     """deCONZ representation that handles lights, groups, scenes and sensors."""
 
