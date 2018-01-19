@@ -8,5 +8,5 @@ install:
 
 # command to run tests
 script:
-  - pytest pydevonz/tests
+  - pytest pydeconz/tests
   #- if [[ $TRAVIS_PYTHON_VERSION == 3.4 || $TRAVIS_PYTHON_VERSION == 3.5 ]]; then py.test pydeconz;else pytest pydeconz; fi
